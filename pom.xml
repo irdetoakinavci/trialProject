@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.trial</groupId>
+  <artifactId>com</artifactId>
+  <version>0.0.1</version>
+  <packaging>jar</packaging>
+  <name>trialProject</name>
+  
+  
+  <scm>
+		<url>https://github.com/akinavci/trialProject</url>
+		<connection>scm:git:git@github.com:akinavci/trialProject.git</connection>
+		<developerConnection>scm:git:git@github.com:akinavci/trialProject.git</developerConnection>
+		<tag>prepare release 0.0.1</tag>
+	</scm>
+	
+	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Snapshots</name>
+			<url>http://localhost/transfer</url>
+		</snapshotRepository>
+		<repository>
+			<id>Releases</id>
+			<name>Releases</name>
+			<url>http://localhost/transfer</url>
+		</repository>
+	</distributionManagement>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.3.2</version>
+			</plugin>
+		</plugins>
+	</build>
+	
+</project>
